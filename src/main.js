@@ -69,8 +69,8 @@ function analyzeSalesData(data, options) {
   }
 
   if (
-    typeof calculateSimpleRevenue !== "function" ||
-    typeof calculateBonusByProfit !== "function"
+    typeof calculateRevenue !== "function" ||
+    typeof calculateBonus !== "function"
   ) {
     throw new Error(
       "Некорректные входные данные: calculateSimpleRevenue или calculateBonusByProfit не функции"
